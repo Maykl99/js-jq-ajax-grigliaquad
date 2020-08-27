@@ -27,7 +27,7 @@ div.containerClone{
     align-items: center;
 }
 
-.template{
+.template{ /* elemento da clonare */
     display: none;
 }
 
