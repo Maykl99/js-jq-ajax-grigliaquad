@@ -26,7 +26,11 @@ $(document).ready(function(){
                       testo.addClass('maggiore').addClass('cliccato'); //.removeClass('minore')
                     }
                   }else{
-                    alert('Hai già cliccato');
+                    //alert('Hai già cliccato');
+                    $('.dialogo').fadeIn(600);
+                    $('.elimina_finestra').click(function(){
+                      $('.dialogo').fadeOut(400);
+                    })
                   }
               },
               'error': function(){

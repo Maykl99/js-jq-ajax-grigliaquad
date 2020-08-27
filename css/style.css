@@ -6,8 +6,10 @@
 
 body{
     background-color: rgb(240, 240, 240);
+    font-family: sans-serif;
 }
 
+/* contenitore dei cloni */
 section{
     margin: 50px 0;
 }
@@ -31,11 +33,36 @@ div.containerClone{
     display: none;
 }
 
+/* colori da assegnare in dinamico */
 .maggiore{
     background-color: teal;
 }
 
 .minore{
     background-color: rgb(207, 207, 152);
+}
+
+/* messaggio di visualizzazione */
+.dialogo{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: none;
+    flex-direction: row-reverse;
+    width: 165px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 28px;
+}
+
+div.elimina_finestra button{
+    color: #3737a2;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 5px;
 }
 
