@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+section{
+    margin: 50px 0;
+}
+
+div.containerClone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuto{
+    height: 100px;
+    width: 100px;
+    border: 1px solid teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maggiore{
+    background-color: teal;
+}
+
+.minore{
+    background-color: rgb(207, 207, 152);
+}
