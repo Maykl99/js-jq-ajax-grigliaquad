@@ -18,12 +18,19 @@ $(document).ready(function(){
               'url': "https://flynn.boolean.careers/exercises/api/random/int",
               'method': "GET",
               'success': function (risposta) {
-                testo.text(risposta.response);
-                if(risposta.response <= 5){
-                  testo.addClass('minore').removeClass('maggiore');
-                }else if(risposta.response > 5){
-                  testo.addClass('maggiore').removeClass('minore');
-                }
+                
+                  if(!testo.hasClass('cliccato')){
+                    testo.text(risposta.response);
+                    if(risposta.response <= 5){
+                      testo.addClass('minore').removeClass('maggiore').addClass('cliccato');
+                    }else if(risposta.response > 5){
+                      testo.addClass('maggiore').removeClass('minore').addClass('cliccato');
+                    }
+                  }else{
+                    alert('Hai già cliccato');
+                  }
+                  
+                
               },
               'error': function(){
                 alert("Errore sconosciuto");

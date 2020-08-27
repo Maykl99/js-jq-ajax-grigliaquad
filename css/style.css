@@ -27,6 +27,10 @@ div.containerClone{
     align-items: center;
 }
 
+.template{
+    display: none;
+}
+
 .maggiore{
     background-color: teal;
 }
@@ -34,3 +38,4 @@ div.containerClone{
 .minore{
     background-color: rgb(207, 207, 152);
 }
+
