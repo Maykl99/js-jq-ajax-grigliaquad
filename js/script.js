@@ -19,18 +19,16 @@ $(document).ready(function(){
               'method': "GET",
               'success': function (risposta) {
                 
-                  if(!testo.hasClass('cliccato')){
+                  if(!testo.hasClass('cliccato')){ // se non ha la classe cliccato esegui il codice sotto
                     testo.text(risposta.response);
                     if(risposta.response <= 5){
-                      testo.addClass('minore').removeClass('maggiore').addClass('cliccato');
+                      testo.addClass('minore').addClass('cliccato'); //.removeClass('maggiore')
                     }else if(risposta.response > 5){
-                      testo.addClass('maggiore').removeClass('minore').addClass('cliccato');
+                      testo.addClass('maggiore').addClass('cliccato'); //.removeClass('minore')
                     }
                   }else{
                     alert('Hai già cliccato');
                   }
-                  
-                
               },
               'error': function(){
                 alert("Errore sconosciuto");
