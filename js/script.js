@@ -4,7 +4,7 @@ Se è <= 5 il quadrato diventa giallo, se è > di 5 il quadrato diventa verde.
 Il numero ottenuto appare al centro del quadrato. */
 $(document).ready(function(){
     for(var i=0; i<=5; i++){
-      var clone = $(".template .val").clone();
+      var clone = $(".template div").clone();
       clone.addClass('contenuto');
       $(".containerClone").append(clone);
     }
