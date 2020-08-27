@@ -21,7 +21,7 @@ $(document).ready(function(){
                 testo.text(risposta.response);
                 if(risposta.response <= 5){
                   testo.addClass('minore').removeClass('maggiore');
-                }else if(risposta.response >5){
+                }else if(risposta.response > 5){
                   testo.addClass('maggiore').removeClass('minore');
                 }
               },
