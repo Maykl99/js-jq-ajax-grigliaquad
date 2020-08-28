@@ -22,7 +22,7 @@ $(document).ready(function(){
                     testo.text(risposta.response);
                     if(risposta.response <= 5){
                       testo.addClass('minore').addClass('cliccato'); //.removeClass('maggiore')
-                    }else if(risposta.response > 5){
+                    }else{
                       testo.addClass('maggiore').addClass('cliccato'); //.removeClass('minore')
                     }
                   }else{
